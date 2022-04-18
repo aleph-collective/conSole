@@ -2,6 +2,8 @@
 
 
 #include "TFileHelper.h"
+#include "Misc/Paths.h"
+#include "Misc/FileHelper.h"
 
 bool UTFileHelper::LoadText(FString FileName, FString& Output)
 {
