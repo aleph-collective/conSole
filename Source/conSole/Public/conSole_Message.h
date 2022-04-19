@@ -25,9 +25,9 @@ public:
 		FText LogMessage;
 
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "ColorCodes")
-		FLinearColor Notice = FLinearColor(255, 255, 255, 1);
+		FLinearColor Notice = FLinearColor(0, 95, 255, 1);
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "ColorCodes")
-		FLinearColor Message = FLinearColor(0, 95, 255, 1);
+		FLinearColor Message = FLinearColor(255, 255, 255, 1);
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "ColorCodes")
 		FLinearColor Warning = FLinearColor(1, 0.75, 0, 1);
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "ColorCodes")
