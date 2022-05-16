@@ -18,11 +18,11 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Data")
 		FString LogDate;
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Data", meta = (ExposeOnSpawn = true))
-		FString Component;
+		FString Sender;
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Data", meta = (ExposeOnSpawn = true))
 		FString Code;
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Data", meta = (ExposeOnSpawn = true))
-		FText LogMessage;
+		FString LogMessage;
 
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "ColorCodes")
 		FLinearColor Notice = FLinearColor(0, 95, 255, 1);
@@ -32,4 +32,11 @@ public:
 		FLinearColor Warning = FLinearColor(1, 0.75, 0, 1);
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "ColorCodes")
 		FLinearColor Error = FLinearColor(1, 0, 0, 1);
+
+	UFUNCTION(BlueprintCallable, Category = "conSole: Message")
+		void SetSender(FString InSender);
+	UFUNCTION(BlueprintCallable, Category = "conSole: Message")
+		void SetCode(FString InCode);
+	UFUNCTION(BlueprintCallable, Category = "conSole: Message")
+		void SetMessage(FString InMessage);
 };

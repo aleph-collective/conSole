@@ -26,7 +26,8 @@ public class conSole : ModuleRules
 			new string[]
 			{
 				"Core",
-				"UMG"
+				"UMG",
+				"WiMan"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
